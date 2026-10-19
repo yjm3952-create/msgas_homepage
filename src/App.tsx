@@ -21,6 +21,7 @@ import { MsdsModal } from './components/modals/MsdsModal';
 import { NoticeModal } from './components/modals/NoticeModal';
 import { CertificateModal } from './components/modals/CertificateModal';
 import { SearchModal } from './components/modals/SearchModal';
+import { ChatbotWidget } from './components/chatbot/ChatbotWidget';
 
 export default function App() {
   const [currentTab, setCurrentTab] = useState<TabType>('home');
@@ -183,6 +184,13 @@ export default function App() {
         onSelectProduct={(p) => setSelectedProduct(p)}
         onSelectMsds={(m) => setSelectedMsds(m)}
         onSelectNotice={(n) => setSelectedNotice(n)}
+        lang={lang}
+      />
+
+      {/* Floating AI Gas Consultant Chatbot */}
+      <ChatbotWidget
+        onOpenQuote={handleOpenQuote}
+        onSelectTab={handleSelectTab}
         lang={lang}
       />
     </div>
