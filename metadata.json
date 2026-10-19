@@ -1,0 +1,6 @@
+{
+  "name": "MS GAS - High-Tech Industrial Energy & Specialty Gas Solutions",
+  "description": "전 공정을 아우르는 가스 토탈 솔루션 (주)MS가스 공식 플랫폼. 산업용·의료용·특수가스 및 엔지니어링 공급망 관리.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
